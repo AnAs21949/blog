@@ -51,7 +51,7 @@ export default function Header() {
                         </ul>
                     </li>
                 </div>
-                <a className='logo'> Blogg</a>
+                <a className='logo'> Blog</a>
                 <div className="second-header-list">
                     <li className="travel-menu">
                         <a href="#">Travel</a>
