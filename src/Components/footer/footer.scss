@@ -1,0 +1,95 @@
+.footer{
+    background-color: #333;
+    color: #fff;
+    // height: 100vh;
+    padding: 3rem 3rem 3rem 3rem;
+    .first-half{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        align-items: center;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0%;
+            bottom: -90%;
+            border: 1px solid #fff;
+        }
+        p{
+            width: 39vw;
+        }
+    }
+    .second-half{
+        margin-top: 13rem;
+        display: flex;
+        gap: 2rem;
+       
+        .part1{
+            flex: 3;
+            .social{
+                display: flex;
+                gap: .7rem;
+            }
+            p{
+                color: #fff;
+            }
+            input{
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 1rem 6rem 1rem 0;
+                border-bottom: 1px solid #fff;
+                color: #fff;
+                // width: 100%;
+            }
+        }
+        .part2{
+            flex: 3;
+            display: flex;
+            gap: 4rem;
+            ul{
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                li{
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+            }
+        }
+        .part3{
+            flex: 3;
+            margin-left: 2.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .second-half{
+        flex-direction: column !important;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0%;
+            top: -40%;
+            border: 1px solid #fff;
+        }
+    }
+    .first-half{
+        &::after{
+            display: none;
+            
+            
+        }
+    }
+}
