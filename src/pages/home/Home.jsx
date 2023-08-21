@@ -5,7 +5,7 @@ import img2 from "../../../resources/img2.jpg"
 import Footer from "../../Components/footer/Footer"
 import  {  useState } from 'react';
 import BlogItem from "./BlogItem"
-import Header from "../../Components/header/header"
+import Header from "../../Components/header/Header"
 
 export default function Home() {
   const [mainPostVisible, setMainPostVisible] = useState(false);
